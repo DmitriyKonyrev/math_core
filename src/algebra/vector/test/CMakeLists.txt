@@ -1,7 +1,10 @@
 INCLUDE (boost_test)
 SET (TARGET_NAME smart_vector_test)
 
+ADD_DEFINITIONS(-DBOOST_TEST_DYN_LINK)
+
 ADD_EXECUTABLE (${TARGET_NAME}
+    test_smart_vector.cpp
     main.cpp
 )
 
